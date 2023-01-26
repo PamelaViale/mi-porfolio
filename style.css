@@ -7,23 +7,23 @@
     list-style: none;
     text-decoration: none;
     color:#2e2e31;
+    font-family: 'Roboto', sans-serif;
     
 
 }
 
 :root {
-    ---backgraund-body: #dac4e2;
+    --backgraund-body: #dac4e2;
     --backgraund-nav: #AA8ED6;
     --buttom: #fff;
     --buttom-grey: #bdbdb9;
-    --font-family: 'Roboto', sans-serif;
     --color:#8318d4;
 }
 
 
 /* En mobile first - 320  */
 body {
-   background-color: var(---backgraund-body)
+   background-color: var(--backgraund-body)
     
 }
 
@@ -43,7 +43,7 @@ body {
 
 .ul-nav,
 .txt-nav:hover{
-    color: var(---backgraund-body);
+    color: var(--backgraund-body);
  
 }
 
@@ -70,7 +70,7 @@ li {
     
 }
 .txt-contact:hover{
-    background-color: var(---backgraund-body);
+    background-color: var(--backgraund-body);
     color: #fff;
     border: 1px solid #fff;
 }
@@ -98,7 +98,7 @@ li {
 }
 
 .txt-presentation>h1 {
-    transition: var(---backgraund-body);
+    transition: var(--backgraund-body);
     transition-duration: 5s;
     font-size: 80px;
     color: var(--color)
@@ -132,10 +132,14 @@ li {
     color: #fff;
 }
 
+
+
+
+
+
 /* <!-- Mis Conocimientos--> */
 
 .class-abilities {
-    /* width: 100vw; */
    background-color: var(--buttom);
    text-align: center;
   }
@@ -144,6 +148,7 @@ li {
     font-size: 50px;
     color: var(--backgraund-nav);
     margin-bottom: 15px;
+  
 }
 
 .classcard {
@@ -197,7 +202,7 @@ li {
 /* Cita */
 
 .someone {
-    background-color: var(rgb(218, 194, 218));
+    background-color: var(--backgraund-body);
     display: flex;
     justify-content: center;
     text-align: center;
@@ -236,6 +241,7 @@ li {
     display: flex;
     flex-direction: column;
     text-align: center;
+    
   
 }
 
@@ -261,6 +267,7 @@ li {
     font-size: 50px;
     color: #AA8ED6;
     margin-bottom: 15px;
+    margin-top: 20px;
 }
 
 .p-proyects {
@@ -290,6 +297,11 @@ li {
 }
 
 /* Contacto */
+
+.section-contacto{
+    display: flex;
+}
+
 /* Columna Contactame */
 
 .section-contacto{
@@ -297,7 +309,7 @@ li {
    display: flex;
    flex-direction: column;
    text-align: start;
-   background-color: var(---backgraund-body);
+   background-color: var(--backgraund-body);
 }
 
 .contacto-left{
@@ -373,6 +385,7 @@ label{
     justify-content: center;
     text-align: center;
     margin-left: 80px;
+    margin-bottom: 20px;
 
 }
 .contacto-buttom:hover{
@@ -390,7 +403,7 @@ color: #fff ;
 }
 
 .footer-portfolio {
-   width: 100%;
+    width: 100vw;
     height: 50vh;
     background-color: var(--backgraund-nav);
     display: flex;
@@ -403,9 +416,17 @@ color: #fff ;
 
 .unorder-list-icons{
     display: flex;
+    
     margin-bottom: 40px;
       
 }
+
+
+.unorder-list-icons{
+    
+   display: flex;
+}
+
 .unorder-list-icons li{
     width: 1px;
 }
@@ -417,12 +438,6 @@ color: #fff ;
 
 }
 
-
-.end_portfolio{
-    font-size: 20px;
-    color: var(--buttom);  
-    
-}
 
 .button-footer{
     display: inline-block;
@@ -455,6 +470,41 @@ color: #fff ;
     color: var(--buttom-grey);
 
 }
+
+.end_portfolio{
+    font-size: 30px;
+    color: var(--buttom);  
+    
+}
+
+.animacion{
+    
+    margin: 50px;
+    animation: animacion 3s infinite;
+
+}
+
+
+@keyframes animacion {
+
+    0% {
+        opacity: 0%;
+        /* El  0 es el principio  */
+    }
+
+    50% {
+        transform: translateY(-20PX); 
+        opacity: 100%;
+              
+    }
+    
+    100% {
+        opacity: 0%;
+        
+    }}
+
+
+
 
 
 
@@ -595,6 +645,14 @@ header{
 
 }
 
+/* Formulario */
+
+.section-contacto{
+    display: flex;
+}
+
+
+
 /*Footer*/
 .footer-menu{
     display: flex;
@@ -606,4 +664,10 @@ header{
 } 
 
 
+
+.animacion{
+    margin: 50px;
+    animation: animacion 3s infinite;
+
+}
 
