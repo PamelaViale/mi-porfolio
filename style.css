@@ -97,22 +97,18 @@ body {
     width: 100%;
     background-color: var(--color-button-one);
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
     text-align: center;
   }
 
  .abilities>h3 {
-    font-size: 50px;
+    font-size: 45px;
     color: var(--second-color);
     margin-bottom: 15px;
   
 }
 
-.classcard {
-    display: flex;
-    flex-wrap: wrap;
-}
 
 .class-imgcontainer>.container-cards {
     width: 1000px;
@@ -141,23 +137,20 @@ body {
     border: 2px solid var(--color-title);
 }
 
+
 .cards>figcaption:hover{
     color: var(--color-title);
 }
 
 .cards>figcaption{
     font-weight:bold;
-    font-size: 20px;
+    font-size: 25px;
     margin: 20px;
     color: var(--second-color);
 }
-.cards{
-    width: 300px ;
-}
-
 
 .container-cards img, .card-item-5{
-    width: 50%;
+    width: 60%;
 }
 .card-item-5{
    width: 31%;
@@ -213,13 +206,14 @@ body {
 .img-proyects {
     width: 70%;
     height: 250px;
-     display: flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 15px;
     border: 2px solid var(--color-button-two);
     border-radius: 20px;
+    
     
 }
 
@@ -269,12 +263,6 @@ body {
 /* Contacto */
 
 .section-contacto{
-    display: flex;
-}
-
-/* Columna Contactame */
-
-.section-contacto{
     padding: 10px; 
    display: flex;
    flex-direction: column;
@@ -282,8 +270,12 @@ body {
    background-color: var(--main-color);
 }
 
+/* Columna Contactame */
+
 .contacto-left{
-     padding: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    
 }
 
 .contacto-title h6, .contacto-right h6 {
@@ -294,13 +286,14 @@ body {
 
 .contacto-title p {
      margin-bottom: 15px;
+     color: var(--color-button-one);
 }
 
-.contacto-ul{
-    display: flex;
-    text-align: start;
+.redes-uno, .redes-dos{
+    margin-bottom: 20px;
+    cursor: pointer;
     
-   }
+}
 
 .contacto-ul .social-ico{
     display: flex;
@@ -323,11 +316,13 @@ border: solid 1px var(--color-button-two);
 
 .redes-uno a, .redes-dos a{
     font-size: 1rem;
+    color: var(--color-button-one);
     
     
 }
 
 /* Columna Escribime */
+
 .form-fila{
     display: flex;
     flex-direction: column;
@@ -337,7 +332,7 @@ border: solid 1px var(--color-button-two);
 input, textarea{
     width: 100%;
     height: 5vh;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     border: solid 1px var(--color-button-two);
     padding-left: 10px;
     border-radius: 10px;
@@ -349,6 +344,8 @@ textarea{
 
 label{
     font-size: 1.5rem;
+    color: var(--color-button-one);
+    margin-bottom: 5px;
     
 }
 .contacto-buttom {
@@ -357,7 +354,7 @@ label{
     font-size: 15px;
     border-radius: 20px;
     padding: 10px 25px;
-    border: 1px solid #fff;
+    border: 1px solid var(--color-button-one);
     cursor: pointer;
     margin-top: 10px;
     width: 40%;
@@ -369,7 +366,7 @@ label{
 
 }
 .contacto-buttom:hover{
-background-color: #AA8ED6;
+background-color: var(--second-color);
 border: 1px solid var(--color-button-two);
 color: #fff ;
 
@@ -383,39 +380,19 @@ color: #fff ;
 }
 
 .footer-portfolio {
-    width: 100vw;
-    height: 50vh;
+    width: 100%;
+    height: 70vh;
     background-color: var(--second-color);
+    
+        
+}
+.unorder-list-icons{
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center; 
-     
-       
+    justify-content: space-evenly;
+    align-items: center;
+           
 }
-
-.unorder-list-icons{
-    display: flex;
-    margin-bottom: 40px;
-      
-}
-
-
-.unorder-list-icons{
-      display: flex;
-}
-
-.unorder-list-icons li{
-    width: 1px;
-}
-
-.unorder-list-menu> li >a:active{
-    padding: 1px 15px;
-    border-radius: 20px;
-    border: 1px solid var(--color-button-one);
-
-}
-
 
 .button-footer{
     display: inline-block;
@@ -428,6 +405,7 @@ color: #fff ;
     line-height: 2.7rem;
     text-align: center;
     transition: 0.1s;
+    margin-top: 60px;
 }
 
 .button-footer:hover{
@@ -444,11 +422,13 @@ color: #fff ;
  .button-footer i, .fa-envelope{
     color: var(--color-button-two);
 
-}
+} 
 
 .end_portfolio{
     font-size: 30px;
-    color: var(--color-button-one);  
+    color: var(--color-button-one); 
+    text-align: center; 
+    margin-bottom: 20px;
     
 }
 
@@ -458,6 +438,7 @@ color: #fff ;
     animation: animacion 3s infinite;
 
 }
+
 
 
 @keyframes animacion {
@@ -490,6 +471,7 @@ color: #fff ;
 @media (min-width:769px){
 
    /*  presentacion*/
+
 .class-presentation{
     display: flex;
     flex-direction: column;
@@ -503,21 +485,45 @@ color: #fff ;
 /* Mis Conocimientos */
 /*  */
 
+.container-cards{
+     display: flex;
+     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+} 
 .cards{
     width: 40% ;
 }
 
 .img-proyects{
-    width: 30%;
+    width: 50%;
     padding: 40px;
    
 }
 
-/* formularios */
+/* Mis Proyectos */
 
-.contacto-buttom{
-    margin-left: 30%;
-    margin-bottom: 10%;
+.card-proyects{
+    display: flex;
+     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.img-proyects{
+    width: 40%;
+}
+
+/* Formulario */
+/* contactame */
+
+.contacto-title{
+    width: 50%;
+    text-align: left;
 }
 
 
@@ -526,7 +532,9 @@ color: #fff ;
     width: 100%;
     height: 30%;
     display: flex;
-    
+    justify-content: center;
+    align-items: center;
+       
       
 }
 
@@ -535,19 +543,40 @@ color: #fff ;
     align-items: center;
     
     
+    
 }
 
 .unorder-list-menu li a{
     color: #fff;
+    margin-left: 60px;
+    font-size: 20px;
         
 }
 
 
+ .unorder-list-icons{
+    display: flex;
+    margin-bottom: 40px;
+      
+} 
+
+.unorder-list-icons li{
+    width: 1px;
+}
+
+.unorder-list-menu> li >a:active{
+    padding: 1px 15px;
+    border-radius: 20px;
+    border: 1px solid var(--color-button-one);
+
 }
 
 
 
+}
+
 /* Media Querys 1024 */
+
  @media (min-width:1024px){
 
   
@@ -622,8 +651,9 @@ li {
  /* Mis conocimientos */
 
 .class-abilities{
+    width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
    
@@ -632,18 +662,22 @@ li {
     margin-top: 5%;
 }
 .container-cards{
-    display: flex;
-    margin-bottom: 10%;
+    width: 70%;
+    margin: 20px 0px;
+
+
 }
 .cards{
-    width: 30%;
+        width: 30%;
+       
+        
 }
 
 
 /* someone */
 
 .p-someone{
-    width: 60%;
+    width: 70%;
     font-size: 2rem;
 }
 
@@ -668,25 +702,47 @@ li {
 /* Formulario */
 
 
-/*Footer*/
-.footer-menu{
+.section-contacto{
+    width: 70%;
+    background-color: aqua;
     display: flex;
+    
+}
+
+.contacto-left{
+width: 35%;
+border: 1px solid rgb(60, 51, 51);
+
+}
+
+
+.contacto-right{
+    width: 35%;
+border: 1px solid red;
+}
+
+
+
+/*Footer*/
+
+.footer-portfolio{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
+   
 }
 
-} 
-
-
+.unorder-list-menu{
+    margin-top: 40px;
+}
 
 .animacion{
-    margin: 50px;
-    animation: animacion 3s infinite;
+     animation: animacion 3s infinite;
 
 }
 
-
+/* HTML en construcción */
 .en-construccion{
     font-size: 50px;
     display: flex;
@@ -698,7 +754,7 @@ li {
     
 }
 
-
+ }
 
 
 
