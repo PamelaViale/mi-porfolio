@@ -13,17 +13,17 @@
 }
 
 :root {
-    --backgraund-body: #dac4e2;
-    --backgraund-nav: #AA8ED6;
-    --buttom: #fff;
-    --buttom-grey: #bdbdb9;
-    --color:#8318d4;
+    --main-color: #dac4e2;
+    --second-color: #AA8ED6;
+    --color-button-one: #fff;
+    --color-button-two: #bdbdb9;
+    --color-title:#8318d4;
 }
 
 
 /* En mobile first - 320  */
 body {
-   background-color: var(--backgraund-body)
+    background-color: var(--main-color)
     
 }
 
@@ -32,54 +32,12 @@ body {
     display: none;
 }
 
-.ul-nav,
-.txt-nav {
-    display: flex;
-    text-decoration: none;
-    color: #fff;
-    text-transform: uppercase;
-    font-family: 'Yusei Magic', sans-serif;
-  }
-
-.ul-nav,
-.txt-nav:hover{
-    color: var(--backgraund-body);
- 
-}
-
-.txt-nav:active{
-    border-radius: 20px;
-    padding: 1px 15px;
-    border: 1px solid #fff;
-     }
-
-.ul-nav,
-li {
-    margin: 0 45px;
-    font-size: 25px;
-}
-
-/* contact bottom */
-.txt-contact{
-    background-color: var(--buttom-grey);
-    color: var(--color);
-    font-size: 20px;
-    border-radius: 20px;
-    padding: 2px 22px;
-    border: 1px solid #fff;
-    
-}
-.txt-contact:hover{
-    background-color: var(--backgraund-body);
-    color: #fff;
-    border: 1px solid #fff;
-}
-
 /* <!-- Mi Presentacion -->  */
 
 .class-presentation {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   text-align: center;
   margin-top: 30px;
@@ -89,22 +47,21 @@ li {
  .img-presentation > img {
      width: 100%; 
     
-
 } 
 
 .txt-presentation>h2 {
     font-size: 50px;
+    color: var(--color-button-one);
 
 }
 
 .txt-presentation>h1 {
-    transition: var(--backgraund-body);
+    transition: var(--main-color);
     transition-duration: 5s;
     font-size: 80px;
-    color: var(--color)
+    color: var(--color-title)
    
-    
-}
+    }
 
 .txt-presentation>h1:hover{
     color: #fff;
@@ -112,41 +69,42 @@ li {
 }
 
 .txt-presentation>p {
+    font-size: 20px;
     text-align: center;
-    margin-top: 20px;
-}
+    color: var(--second-color);
+    }
 
 .txt-presentation>a {
-    background-color: var(--buttom-grey);
+    background-color: var(--color-button-two);
+    color: var(--color-title);
     border-radius: 18px;
     padding: 10px 25px;
     display: inline-flex;
     margin: 15px;
-    border: 1px solid var(--backgraund-nav);
+    border: 1px solid var(--second-color);
     cursor: pointer;
   
 }
 .txt-presentation>a:hover{
-    background-color: var(--backgraund-nav);
-    border: 1px solid #fff;
-    color: #fff;
+    background-color: var(--second-color);
+    border: 1px solid var(--color-button-one);
+    color: var(--color-button-one);
 }
-
-
-
-
-
 
 /* <!-- Mis Conocimientos--> */
 
 .class-abilities {
-   background-color: var(--buttom);
-   text-align: center;
+    width: 100%;
+    background-color: var(--color-button-one);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
  .abilities>h3 {
     font-size: 50px;
-    color: var(--backgraund-nav);
+    color: var(--second-color);
     margin-bottom: 15px;
   
 }
@@ -166,6 +124,7 @@ li {
   
 }
 
+
 .react-img, .git-img  { 
     width: 107px;
 }
@@ -174,17 +133,23 @@ li {
     background-color: #fff;
     padding: 60px 70px;
     margin: 10px;
-    border: 2px solid var(--buttom-grey);
+    border: 2px solid var(--color-button-two);
     border-radius: 20px;
 }
 
 .container-cards>.cards:hover{
-    border: 2px solid var(--color);
+    border: 2px solid var(--color-title);
+}
+
+.cards>figcaption:hover{
+    color: var(--color-title);
 }
 
 .cards>figcaption{
     font-weight:bold;
     font-size: 20px;
+    margin: 20px;
+    color: var(--second-color);
 }
 .cards{
     width: 300px ;
@@ -202,7 +167,7 @@ li {
 /* Cita */
 
 .someone {
-    background-color: var(--backgraund-body);
+    background-color: var(--second-color);
     display: flex;
     justify-content: center;
     text-align: center;
@@ -223,7 +188,7 @@ li {
     
 }
 .p-someone p{
-    color: var(--backgraund-nav);
+    color: var(--main-color);
     margin-bottom: 10px;
 }
 
@@ -237,7 +202,7 @@ li {
 /* Mis Proyectos */
 
 .class-projects{
-    background-color: var(--buttom);
+    background-color: #fff;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -248,30 +213,30 @@ li {
 .img-proyects {
     width: 70%;
     height: 250px;
-    background-color: #fff;
-    display: flex;
+     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 15px;
-    border: 2px solid var(--buttom-grey);
+    border: 2px solid var(--color-button-two);
     border-radius: 20px;
     
 }
 
 .img-proyects:hover{
-    border: 2px solid var(--color);
+    border: 2px solid var(--color-title);
 }
 
 .h-proyects {
     font-size: 50px;
-    color: #AA8ED6;
+    color:var(--second-color);
     margin-bottom: 15px;
     margin-top: 20px;
 }
 
-.p-proyects {
-    font-size: 20px;
+.p-proyects, .abilities>p {
+    font-size: 25px;
+    color: var(--color-button-two);
     
 }
 
@@ -291,10 +256,15 @@ li {
 
 .img-proyects>figcaption {
     font-size: 20px;
-    color: #8318d4;
+    color: var(--second-color);
     margin-top: 10px;
 
 }
+
+.img-proyects>figcaption:hover{
+    color: var(--color-title);
+}
+
 
 /* Contacto */
 
@@ -309,7 +279,7 @@ li {
    display: flex;
    flex-direction: column;
    text-align: start;
-   background-color: var(--backgraund-body);
+   background-color: var(--main-color);
 }
 
 .contacto-left{
@@ -319,37 +289,46 @@ li {
 .contacto-title h6, .contacto-right h6 {
     font-size: 3rem;
     margin-bottom: 10px;
-    color: #fff;
+    color: var(--color-button-one);
 }
 
 .contacto-title p {
-     margin-bottom: 10px;
+     margin-bottom: 15px;
 }
 
 .contacto-ul{
     display: flex;
     text-align: start;
+    
    }
 
 .contacto-ul .social-ico{
     display: flex;
+    
 }
 .contacto-ul i {
-    color: var(--color);
-    margin-right: 10px;
-     
+    color: var(--color-title);
+    margin-right: 15px;
+    background-color: var(--color-button-one);
+    border-radius: 50%;
+    padding: 5px;
+    border: solid 1px var(--color-title);
+         
 }
+
+.contacto-ul i:hover{
+color: var(--color-button-two);
+border: solid 1px var(--color-button-two);
+}
+
 .redes-uno a, .redes-dos a{
     font-size: 1rem;
+    
     
 }
 
 /* Columna Escribime */
-
-
-
 .form-fila{
-    
     display: flex;
     flex-direction: column;
     
@@ -359,7 +338,7 @@ input, textarea{
     width: 100%;
     height: 5vh;
     margin-bottom: 10px;
-    border: solid 1px var(--buttom-grey);
+    border: solid 1px var(--color-button-two);
     padding-left: 10px;
     border-radius: 10px;
 
@@ -373,7 +352,8 @@ label{
     
 }
 .contacto-buttom {
-    background-color: var(--buttom-grey);
+    background-color: var(--color-button-two);
+    color: var(--color-title);
     font-size: 15px;
     border-radius: 20px;
     padding: 10px 25px;
@@ -390,7 +370,7 @@ label{
 }
 .contacto-buttom:hover{
 background-color: #AA8ED6;
-border: 1px solid var(--buttom-greyr);
+border: 1px solid var(--color-button-two);
 color: #fff ;
 
 
@@ -405,7 +385,7 @@ color: #fff ;
 .footer-portfolio {
     width: 100vw;
     height: 50vh;
-    background-color: var(--backgraund-nav);
+    background-color: var(--second-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -416,15 +396,13 @@ color: #fff ;
 
 .unorder-list-icons{
     display: flex;
-    
     margin-bottom: 40px;
       
 }
 
 
 .unorder-list-icons{
-    
-   display: flex;
+      display: flex;
 }
 
 .unorder-list-icons li{
@@ -434,7 +412,7 @@ color: #fff ;
 .unorder-list-menu> li >a:active{
     padding: 1px 15px;
     border-radius: 20px;
-    border: 1px solid #fff;
+    border: 1px solid var(--color-button-one);
 
 }
 
@@ -444,7 +422,7 @@ color: #fff ;
     width: 2.5rem;
     height: 2.5rem;
     cursor: pointer;
-    background-color: white;
+    background-color: var(--color-button-one);
     border: none;
     border-radius: 50%;
     line-height: 2.7rem;
@@ -452,28 +430,25 @@ color: #fff ;
     transition: 0.1s;
 }
 
-
-
-
 .button-footer:hover{
-    background-color: var(--backgraund-nav);
+    background-color: var(--second-color);
     border: 1px solid #fff;
     
 }
 
 .button-footer :active{
-       box-shadow: -4px -1px 38px 13px var(--color);
+       box-shadow: -4px -1px 38px 13px var(--color-button-one);
        
     }
 
  .button-footer i, .fa-envelope{
-    color: var(--buttom-grey);
+    color: var(--color-button-two);
 
 }
 
 .end_portfolio{
     font-size: 30px;
-    color: var(--buttom);  
+    color: var(--color-button-one);  
     
 }
 
@@ -583,15 +558,42 @@ header{
 .main-nav {
     width: 100%;
     height: 10vh;
-    background-color: var(--backgraund-nav);
+    background-color: var(--second-color);
     display: flex;
     justify-content: flex-end;
+    text-align: center;
     align-items: center;
     box-shadow: 6px 10px 15px 0px rgba(0,0,0,0.22);
     position: fixed;
    
         
      } 
+
+.ul-nav,
+.txt-nav {
+    display: flex;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Yusei Magic', sans-serif;
+  }
+
+.ul-nav,
+.txt-nav:hover{
+    color: var(--main-color);
+ 
+}
+
+.txt-nav:active{
+    border-radius: 20px;
+    padding: 1px 15px;
+    border: 1px solid #fff;
+     }
+
+.ul-nav,
+li {
+    margin: 0 45px;
+    font-size: 25px;
+}
 
 .class-presentation {
         display: flex;
@@ -600,7 +602,25 @@ header{
       
       }
 
-      /* mis conocimientos */
+/* Botón de contacto Nav */
+
+.txt-contact{
+    background-color: var(--color-button-two);
+    color: var(--color-title);
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 2px 22px;
+    border: 1px solid #fff;
+    
+}
+.txt-contact:hover{
+    background-color: var(--main-color);
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+ /* Mis conocimientos */
+
 .class-abilities{
     display: flex;
     flex-direction: column;
@@ -647,11 +667,6 @@ header{
 
 /* Formulario */
 
-.section-contacto{
-    display: flex;
-}
-
-
 
 /*Footer*/
 .footer-menu{
@@ -670,4 +685,20 @@ header{
     animation: animacion 3s infinite;
 
 }
+
+
+.en-construccion{
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90vh;
+    
+    
+}
+
+
+
+
 
