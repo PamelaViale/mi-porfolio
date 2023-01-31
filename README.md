@@ -1,12 +1,12 @@
 
 # Portfolio - Pamela Viale
 
- * ## Presentación 
+ * ## Presentación:
 Hola ! Mi nombre es Pamela Viale,  desarrolladora web en potencia. Actualmente cuento con conocimientos de HTML, CSS Y JAVA. 
 
 Los invito a ver mi portfolio, el cual está en construcción ya que iré completando a lo largo de mi carrera..
 
-* ## Paginas de inspiración
+* ## Paginas de inspiración:
 
 Mi Portfolio es un proyecto  para el curso de programación y esta inspirado en el modelo que Ada nos designó como proyecto y práctica.
 
