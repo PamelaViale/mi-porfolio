@@ -9,8 +9,11 @@ Los invito a ver mi portfolio, el cual está en construcción ya que iré comple
 *****
 
 * ## Link para que puedas ver mi trabajo: 
-Puedes ver mi trabajo pulsando el siguiente enlace
- <a name="Proyecto-Porfolio" hreff="https://pamelaviale.github.io/mi-portfolio/">Portfolio-Pame Viale</a>
+
+Puedes ver mi trabajo pulsando el siguiente enlace:
+ 
+<a href="https://pamelaviale.github.io/mi-portfolio/">Portfolio-PameViale</a>
+
 
 *****
 
