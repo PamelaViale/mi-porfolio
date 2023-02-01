@@ -46,7 +46,15 @@ body {
 
 .img-presentation>img {
     width: 100%;
+    
+}
 
+.img-presentation>img:hover{
+    -webkit-transform: rotateY(180deg);
+    -webkit-transform-style: preserve-3d;
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+    cursor: pointer;
 }
 
 .txt-presentation>h2 {
@@ -59,7 +67,9 @@ body {
     transition: var(--main-color);
     transition-duration: 5s;
     font-size: 80px;
+    cursor: pointer;
     color: var(--color-title)
+    
 }
 
 .txt-presentation>h1:hover {
@@ -100,6 +110,7 @@ body {
     flex-wrap: wrap;
     align-items: center;
     text-align: center;
+    
 }
 
 .abilities>h3 {
@@ -116,8 +127,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-
-}
+    }
 
 
 .react-img,
@@ -131,6 +141,9 @@ body {
     border: 2px solid var(--color-button-two);
     border-radius: 20px;
     cursor: pointer;
+    box-shadow: 2px 2px 5px 3px rgba(0,0,0,0.31);
+    transform: all 400ms ease;
+
 }
 
 figcaption {
@@ -140,10 +153,10 @@ figcaption {
     color: var(--color-title);
 }
 
-.cards:hover,
-figcaption:hover {
+.cards:hover{
     border-color: var(--color-title);
-    background-color: var(--main-color);
+    box-shadow: 8px 5px 13px 5px var(--second-color);
+    transform: translateY(-3%);
 
 }
 
@@ -213,7 +226,14 @@ figcaption:hover {
     margin: 15px;
     border: 2px solid var(--color-button-two);
     border-radius: 20px;
+    box-shadow: 2px 2px 5px 3px rgba(0,0,0,0.31);
+    transform: all 400ms ease;
+}
 
+.img-proyects:hover {
+    border-color: var(--color-title);
+    box-shadow: 8px 5px 13px 5px var(--second-color);
+    transform: translateY(-3%);
 }
 
 .img-proyects>.fig-caption {
@@ -221,13 +241,10 @@ figcaption:hover {
     background-color: #fff;
     color: var(--second-color);
     margin-top: 10px;
+    
 
 }
 
-.img-proyects:hover {
-    border-color: var(--color-title);
-
-}
 
 .h-proyects {
     font-size: 50px;
@@ -254,6 +271,7 @@ figcaption:hover {
     flex-wrap: wrap;
     justify-content: center;
     cursor: pointer;
+    
 
 
 
@@ -294,6 +312,7 @@ figcaption:hover {
 .redes-dos {
     margin-bottom: 20px;
     cursor: pointer;
+    margin-top: 30px;
 
 }
 
@@ -312,18 +331,19 @@ figcaption:hover {
 
 }
 
-.contacto-ul i:hover {
+.contacto-ul i:hover, .redes-uno a:hover, .redes-dos a:hover {
     color: var(--color-button-two);
-    border: solid 1px var(--color-button-two);
+   
 }
 
 .redes-uno a,
 .redes-dos a {
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: var(--color-button-one);
-
-
+    
 }
+
+
 
 /* Columna Escribime */
 
@@ -432,6 +452,10 @@ label {
 .fa-envelope {
     color: var(--color-button-two);
 
+}
+
+.button-footer i:hover{
+    color: var(--color-title);
 }
 
 .end_portfolio {
