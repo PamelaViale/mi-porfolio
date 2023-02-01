@@ -805,6 +805,24 @@ label {
         animation: animacion 2s infinite;
     }
 
+    .boton-home{
+        background-color: var(--color-button-two);
+        color: var(--color-title);
+        font-size: 25px;
+        border-radius: 20px;
+        padding: 6px 22px;
+        border: 1px solid #fff;
+        margin-left: 20px;
+        
+
+}
+
+.boton-home:hover {
+         background-color: var(--main-color);
+        color: #fff;
+        border: 1px solid #fff;
+}
+
 
 
 }

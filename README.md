@@ -4,7 +4,7 @@
  * ## Presentación:
 Hola ! Mi nombre es Pamela Viale,  desarrolladora web en potencia. 
 
-Actualmente cuento con conocimientos de HTML, CSS Y JAVA. 
+Actualmente cuento con conocimientos de HTML, CSS Y JAVA SCRIPT. 
 
 Los invito a ver mi portfolio, el cual está en construcción ya que iré completando a lo largo de mi carrera.
 
