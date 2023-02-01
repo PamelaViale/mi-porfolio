@@ -101,6 +101,7 @@ body {
     color: var(--color-button-one);
 }
 
+
 /* <!-- Mis Conocimientos--> */
 
 .class-abilities {
@@ -148,10 +149,10 @@ body {
 
 figcaption {
     font-weight: bold;
-    font-size: 25px;
     margin: 20px;
     color: var(--color-title);
 }
+
 
 .cards:hover{
     border-color: var(--color-title);
