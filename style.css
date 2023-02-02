@@ -111,6 +111,7 @@ body {
     flex-wrap: wrap;
     align-items: center;
     text-align: center;
+    padding-top: 30px;
     
 }
 
@@ -215,7 +216,7 @@ figcaption {
     display: flex;
     flex-direction: column;
     text-align: center;
-
+    padding-top: 35px;
 }
 
 .img-proyects {
@@ -281,6 +282,7 @@ figcaption {
 
 .section-contacto {
     padding: 10px;
+    padding-top: 60px;
     display: flex;
     flex-direction: column;
     text-align: start;
@@ -625,6 +627,7 @@ label {
         align-items: center;
         box-shadow: 6px 10px 15px 0px rgba(0, 0, 0, 0.22);
         position: fixed;
+        z-index: 1;
 
 
     }
@@ -671,7 +674,7 @@ label {
         color: var(--color-title);
         font-size: 20px;
         border-radius: 20px;
-        padding: 2px 22px;
+        padding: 5px 22px;
         border: 1px solid #fff;
 
     }
