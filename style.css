@@ -363,7 +363,8 @@ textarea {
     border: solid 1px var(--color-button-two);
     padding-left: 10px;
     border-radius: 10px;
-
+    resize: none;
+    overflow: hidden;
 }
 
 textarea {
